@@ -1,6 +1,6 @@
 # Quick install
 
-Installing Odoo 16 with one command.
+Installing Odoo 15 with one command.
 
 (Supports multiple Odoo instances on one server)
 
@@ -21,7 +21,7 @@ curl -s https://raw.githubusercontent.com/pro-777/Hello-odoo15/master/run.sh | s
 to set up another Odoo instance @ `localhost:11015` (default master password: `mostafa@1234`)
 
 Some arguments:
-* First argument (**odoo-one**): Odoo deploy folder
+* First argument (**odoo15-one**): Odoo deploy folder
 * Second argument (**10015**): Odoo port
 * Third argument (**20015**): live chat port
 
@@ -40,7 +40,7 @@ Start the container:
 docker-compose up
 ```
 
-* Then open `localhost:10015` to access Odoo 16.0. If you want to start the server with a different port, change **10015** to another value in **docker-compose.yml**:
+* Then open `localhost:10015` to access Odoo 15.0. If you want to start the server with a different port, change **10015** to another value in **docker-compose.yml**:
 
 ```
 ports:
@@ -78,7 +78,7 @@ The **addons/** folder contains custom addons. Just put your custom addons if yo
 
 * To change Odoo configuration, edit file: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* Default database password (**admin_passwd**) is `pro.info`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* Default database password (**admin_passwd**) is `mostafa@1234`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 # Odoo container management
 
@@ -120,10 +120,10 @@ server {
 
 # docker-compose.yml
 
-* odoo:16.0
+* odoo:15.0
 * postgres:14
 
-# Odoo 16 screenshots
+# Odoo 15 screenshots
 
 <img src="screenshots/2022-10-17_22h16_21.png" width="50%">
 
