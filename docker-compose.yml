@@ -5,7 +5,7 @@ services:
     user: root
     environment:
       - POSTGRES_USER=odoo
-      - POSTGRES_PASSWORD=odoo15@2021      
+      - POSTGRES_PASSWORD=odoo15@2022      
       - POSTGRES_DB=postgres
     restart: always             # run as a service
     volumes:
